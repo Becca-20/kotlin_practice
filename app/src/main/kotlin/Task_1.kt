@@ -5,11 +5,11 @@
 // - With only a name
 // - With the age first and name second (using named arguments)
 
-fun describePerson(name: String, age: Int = 30) {
-    println("${name} is ${age} years old.")
-}
-
 fun main() {
     describePerson("Susan", 42)
     describePerson("Alex")
+}
+
+fun describePerson(name: String, age: Int = 30) {
+    println("${name} is ${age} years old.")
 }
