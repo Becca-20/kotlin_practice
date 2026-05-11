@@ -6,10 +6,11 @@
 // - With the age first and name second (using named arguments)
 
 fun main() {
-    describePerson("Susan", 42)
-    describePerson("Alex")
+    println(describePerson("Susan", 42))
+    println(describePerson("Alex"))
 }
 
-fun describePerson(name: String, age: Int = 30) {
-    println("${name} is ${age} years old.")
+fun describePerson(name: String, age: Int = 30): String {
+    // needs to be a return statement instead of just a String to enable testing functionality
+    return "${name} is ${age} years old."
 }
